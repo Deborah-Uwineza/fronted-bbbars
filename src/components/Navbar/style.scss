@@ -1,0 +1,24 @@
+@import "../../assets/scss/color.style.scss";
+
+
+.menu-top ul {
+  display: inline-flex;
+  li {
+    margin: 15px 20px;
+    a {
+      color: #747474;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #140407 !important;
+      cursor: pointer;
+      font-weight: 700;
+    }
+  }
+}
+
+.bt-primary{
+  background-color: $primaryColor !important;
+}
+
