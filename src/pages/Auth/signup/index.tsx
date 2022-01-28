@@ -21,9 +21,10 @@ import TextField from "../../../components/UI/Inputs/TextInput";
 
 import "../../../assets/scss/main.scss";
 import { Email, Person } from "@mui/icons-material";
+import AuthLayout from "../../../components/Layout/blackSpace";
 // import companyLogo from "../../../assets/images/logo.png";
 //import companyLogo from "../../../assets/images/logo.png";
-import AuthLayout from "../../../components/Layout/blackSpace";
+// import AuthLayout from "../../../components/Layout/blackSpace";
 // import { Formik } from "formik";
 
 type Props = {

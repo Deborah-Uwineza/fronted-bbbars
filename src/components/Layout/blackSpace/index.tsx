@@ -8,12 +8,12 @@ import Footer from "../../Footer";
 import {LayoutProps} from "../type";
 
 
-const AuthLayout = (props: LayoutProps) => {
+function AuthLayout(props: LayoutProps) {
   const { children, subMenuItems } = props;
   const classes = useStyles();
 
-  const pathLocation:any = useLocation().pathname;
-  
+  const pathLocation: any = useLocation().pathname;
+
   const menuItems = [
     {
       label: "Profile",
@@ -23,18 +23,19 @@ const AuthLayout = (props: LayoutProps) => {
     {
       label: "contact",
       link: "/contact",
-      color: pathLocation === "/contact"  ? "#d2435e" : ""
+      color: pathLocation === "/contact" ? "#d2435e" : ""
     },
-   
   ];
 
   return (
     <>
       <div className={classes.root}>
+      
         <div className={classes.container}>
+  
           <Grid container spacing={3}>
             {/* Top navigation bar */}
-            
+           
             <Grid item xs={12} style={{ height: "12vh" }}>
               <Navbar menuItems={menuItems} />
             </Grid>
@@ -48,12 +49,15 @@ const AuthLayout = (props: LayoutProps) => {
               <main className={classes.papers}>{children}</main>
             </Grid>
           </Grid>
+
+        
+
         </div>
 
         <Footer />
       </div>
     </>
   );
-};
+}
 
 export default AuthLayout;

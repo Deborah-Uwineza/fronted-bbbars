@@ -159,8 +159,9 @@ const Navbar = (props: IProps) => {
             </Box>
           </div>
         </Toolbar>
-        
-      </AppBar>
+       </AppBar>
+      
+       <img src="logo1.jpg" alt="BigCo Inc. logo" height="700px" width="99.5%"  />
     </div>
     
   );

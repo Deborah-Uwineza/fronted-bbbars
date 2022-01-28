@@ -11,7 +11,8 @@ export  const useStyles = makeStyles((theme: Theme) =>
       height: "95vh",
     },
     container: {
-      width: "95%",
+      width: "102%",
+      height: "95vh",
       margin: "auto",
     },
     paper: {
