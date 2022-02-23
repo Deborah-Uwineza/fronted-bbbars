@@ -144,7 +144,7 @@ const MaterialList = (props: any) => {
                         <Link onClick={()=>handleViewById(material.id)}>{material.PropertiesNo}</Link>
                          </TableCell>
                         <TableCell >
-                         {material.item.name}
+                         {material.status}
                         </TableCell>
                         <TableCell >
                          {material.quantity}

@@ -1,5 +1,6 @@
+//import { Dashboard } from "@material-ui/icons";
 import { Route, Switch } from "react-router-dom";
-import ItAdminDashboard from "../pages/itAdmin/Dashboard";
+import Dashboard from "../pages/itAdmin/Dashboard";
 import CreateEnfant from "../pages/itAdmin/Enfant/AddEnfant";
 import EditEnfant from "../pages/itAdmin/Enfant/EditEnfant";
 import ListEnfant from "../pages/itAdmin/Enfant/ListEnfant";
@@ -15,8 +16,9 @@ import ListMaterial from "../pages/itAdmin/Material/ListMaterial";
 const ItAdminRouters = () => {
   return (
     <Switch>
-      <Route path="/itAdmin/dashboard" exact component={ItAdminDashboard} />
+     
       <Route path="/itAdmin/materials/create" exact component={createMaterial} />
+      <Route path="/itAdmin/dashboard" exact component={Dashboard} />
       <Route path="/itAdmin/materials" exact component={ListMaterial} />
       <Route path="/itAdmin/materials/:id" exact component={EditMaterial} />
       <Route path="/itAdmin/items/create" exact component={CreateItem} />

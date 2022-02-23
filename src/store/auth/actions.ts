@@ -26,7 +26,7 @@ export const authActions =
         }
 
         if (token.role === "IT_ADMIN") {
-          history.push("/itAdmin/dashboard");
+          history.push("/itAdmin/materials");
         }
 
         if (token.role === "CITIZENS") {

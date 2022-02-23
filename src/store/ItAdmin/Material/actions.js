@@ -55,8 +55,39 @@ export const createMaterial  =
     }
   };
 
+// export const getMaterials = (): AppThunk => async (dispatch) => {
+//   dispatchHandler({ type: ERRORS, data: null, dispatch });
+//   try {
+//     const URL = "/material";
+//     const header = {
+//       headers: {
+//         "Content-Type": "multipart/form-data",
+//       },
+//     };
+//     const { data } = await axios.get(URL, header);
+//     console.log(data.payload);
+//     if (data) {
+//       dispatchHandler({
+//         type: GET_ALL_MATERIAL,
+//         data: data.payload,
+//         dispatch,
+//       });
+//     }
+//   } catch (error) {
+//     if (error) {
+//       const data = error.response;
+//       return dispatchHandler({
+//         type: ERRORS,
+//         data,
+//         dispatch,
+//       });
+//     }
+//   }
+// };
+
 export const getMaterials = (): AppThunk => async (dispatch) => {
   dispatchHandler({ type: ERRORS, data: null, dispatch });
+  console.log("hello materiak");
   try {
     const URL = "/material";
     const header = {

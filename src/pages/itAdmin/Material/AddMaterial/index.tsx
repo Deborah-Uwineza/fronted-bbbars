@@ -10,7 +10,7 @@ import React, {
 import AddMaterial from "../../../../components/ItAdmin/Material/AddMaterial";
 import ItAdminLayout from "../../../../components/Layout/ItAdmin";
 import { IErrors, IModalState, IStateMaterial } from "../../../../store/ItAdmin/Material/type";
-import { createMaterial } from "../../../../store/ItAdmin/Material/actions";
+import { createMaterial, getMaterials } from "../../../../store/ItAdmin/Material/actions";
 import { getItems } from "../../../../store/ItAdmin/Item/actions";
 import { IStateItem } from "../../../../store/ItAdmin/Item/type";
 
@@ -53,7 +53,7 @@ const statuses = [
 
 
   React.useEffect(() => {
-    dispatch(getItems());
+    dispatch(getMaterials());
     
   }, []);
 
@@ -105,7 +105,6 @@ const statuses = [
           modalState={modalState}
           materialMessage={materialMessage}
           configMenuErrors={configMenuErrors}
-          items={items}
           statuses={statuses}
         />
       </ItAdminLayout>

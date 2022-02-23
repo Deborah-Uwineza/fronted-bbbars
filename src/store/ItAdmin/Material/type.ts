@@ -61,7 +61,7 @@ interface IUpdateMaterial {
 interface IMaterialList {
   type: typeof GET_ALL_MATERIAL;
   payload: {
-    materials: IStateMaterial;
+    materials: IStateMaterial[];
   };
 }
 

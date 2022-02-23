@@ -137,10 +137,11 @@ import  TasksProgress  from '../../../components/dashboard/tasks-progress';
 import Budget from '../../../components/dashboard/Budget';
 
 import DashboardLayout from '../../../components/dashboard-layout';
+import ItAdminLayout from '../../../components/Layout/ItAdmin';
 
 
 const Dashboard = () => (
-  <>
+  <ItAdminLayout>
     <Head>
       <title>
         Dashboard | Material Kit
@@ -243,18 +244,9 @@ const Dashboard = () => (
         </Grid>
       </Container>
     </Box>
-  </>
+  </ItAdminLayout>
 );
 
-Dashboard.getLayout = (page:any) => (
-  <DashboardLayout>
-    {page}
-  </DashboardLayout>
-  
-    // <ItAdminLayout>
-    //    {page}
-    // </ItAdminLayout>
-  );
 
 
 export default Dashboard;

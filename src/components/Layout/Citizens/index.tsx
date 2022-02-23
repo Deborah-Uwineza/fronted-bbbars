@@ -20,11 +20,7 @@ const CitizenLayout = (props: LayoutProps) => {
       link: "/citizen/dashboard",
       color: pathLocation === "/citizen/dashboard" ? "#d2435e" : ""
     },
-    {
-      label: "Dashboard",
-      link: "/citizen/dashboard",
-      color: pathLocation === "/citizen/dashboard" ? "#d2435e" : ""
-    },
+    
     {
       label: "Adopter",
       link: "/citizen/adopter",

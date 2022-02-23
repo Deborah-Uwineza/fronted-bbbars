@@ -16,6 +16,10 @@ const ItAdminLayout = (props: LayoutProps) => {
   const pathLocation:any = useLocation().pathname;
   
   const menuItems = [
+   
+    
+    
+
     {
       label: "Materials",
       link: "/itAdmin/materials",
@@ -25,13 +29,6 @@ const ItAdminLayout = (props: LayoutProps) => {
       label: "Dashboard",
       link: "/itAdmin/dashboard",
       color: pathLocation === "/itAdmin/dashboard" ? "#d2435e" : ""
-    },
-    
-
-    {
-      label: "Materials",
-      link: "/itAdmin/materials",
-      color: pathLocation === "/itAdmin/materials" || pathLocation === "/itAdmin/materials" ? "#d2435e" : ""
     },
     
     {
